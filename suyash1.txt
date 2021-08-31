@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class student {
+   public  String name;
+   public int roll;
+   public void getvalues()
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("enter elements");
+       name=sc.next();
+       roll=sc.nextInt();
+
+
+   }
+   public void  showvalues()
+   {
+       System.out.println(name+"   "+roll);
+
+   }
+   
+   
+
+    
+}
+
+class studentmain
+{
+    public static void  main(String[]args) {
+        student ob1 = new student();
+        student ob2=new student();
+        ob1.getvalues();
+        ob1.showvalues();
+        ob2.getvalues();
+        ob2.showvalues();
+
+
+
+        
+        
+    }
+}
